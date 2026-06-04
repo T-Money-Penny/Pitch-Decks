@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)file:///Users/taylormcarthur/Downloads/pitch-deck_2.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CyberForge Media — {{PROSPECT_NAME}} Growth Proposal</title>
 <style>
   /* ── LL BROWN FONT FACE ───────────────────────────── */
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-Thin.otf') format('opentype'); font-weight: 100; font-style: normal; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-ThinItalic.otf') format('opentype'); font-weight: 100; font-style: italic; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-Light.otf') format('opentype'); font-weight: 300; font-style: normal; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-LightItalic.otf') format('opentype'); font-weight: 300; font-style: italic; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-RegularItalic.otf') format('opentype'); font-weight: 400; font-style: italic; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-MediumItalic.otf') format('opentype'); font-weight: 500; font-style: italic; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-BoldItalic.otf') format('opentype'); font-weight: 700; font-style: italic; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-Black.otf') format('opentype'); font-weight: 900; font-style: normal; }
-  @font-face { font-family: 'BrownLL'; src: url('fonts/BrownLL-BlackItalic.otf') format('opentype'); font-weight: 900; font-style: italic; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-Thin.otf') format('opentype'); font-weight: 100; font-style: normal; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-ThinItalic.otf') format('opentype'); font-weight: 100; font-style: italic; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-Light.otf') format('opentype'); font-weight: 300; font-style: normal; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-LightItalic.otf') format('opentype'); font-weight: 300; font-style: italic; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-RegularItalic.otf') format('opentype'); font-weight: 400; font-style: italic; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-MediumItalic.otf') format('opentype'); font-weight: 500; font-style: italic; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-BoldItalic.otf') format('opentype'); font-weight: 700; font-style: italic; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-Black.otf') format('opentype'); font-weight: 900; font-style: normal; }
+  @font-face { font-family: 'BrownLL'; src: url('/fonts/BrownLL-BlackItalic.otf') format('opentype'); font-weight: 900; font-style: italic; }
 <style>
   /* ── BRAND TOKENS ─────────────────────────────────── */
   :root {
@@ -39,7 +39,7 @@
 
   /* ── RESET ────────────────────────────────────────── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; background: #1B1B1B !important; color-scheme: dark; }
   body {
     font-family: 'BrownLL', sans-serif;
     background: var(--carbon);
@@ -154,7 +154,7 @@
   }
 
   /* ── CONTEXT ──────────────────────────────────────── */
-  .context-body { display: grid; gap: 22px; max-width: 800px; }
+  .context-body { display: grid; gap: 22px; max-width: 100%; }
 
   /* ── FINDINGS ─────────────────────────────────────── */
   .findings-grid {
@@ -186,9 +186,9 @@
     text-transform: uppercase; letter-spacing: 0.09em;
     padding: 3px 10px; border-radius: 20px; margin-top: 14px;
   }
-  .sev-high { background: rgba(255,0,0,0.12); color: #ff6b6b; border: 1px solid rgba(255,0,0,0.2); }
-  .sev-med  { background: rgba(255,0,255,0.1); color: #ff80ff; border: 1px solid rgba(255,0,255,0.2); }
-  .sev-low  { background: rgba(0,255,255,0.1); color: var(--cyan); border: 1px solid rgba(0,255,255,0.2); }
+  .sev-high { background: rgba(255,0,0,0.18); color: #ff8080; border: 1px solid rgba(255,0,0,0.4); }
+  .sev-med  { background: rgba(255,0,255,0.15); color: #ff99ff; border: 1px solid rgba(255,0,255,0.4); }
+  .sev-low  { background: rgba(0,255,255,0.15); color: #00ffff; border: 1px solid rgba(0,255,255,0.4); }
 
   /* ── COMPETITIVE TABLE ────────────────────────────── */
   .table-wrap {
@@ -391,6 +391,12 @@
     border: 1px solid var(--border); transition: border-color .15s, transform .15s; cursor: pointer;
   }
   .btn-secondary:hover { border-color: var(--muted); transform: translateY(-1px); color: var(--white); }
+  
+  .contract-form { background: #232327; border: 1px solid rgba(0,255,255,0.2); border-radius: var(--radius-lg); padding: 36px; max-width: 640px; margin: 0 auto 40px; text-align: left; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .form-input { background: #1B1B1B; border: 1px solid rgba(249,249,249,0.15); border-radius: 8px; padding: 12px 16px; color: #F9F9F9; font-family: 'BrownLL', sans-serif; font-size: 14px; width: 100%; outline: none; transition: border-color .2s; }
+  .form-input:focus { border-color: rgba(0,255,255,0.5); }
+  .form-input option { background: #232327; }
   .footer-meta {
     font-size: 0.8rem; color: var(--muted2);
     border-top: 1px solid var(--border); padding-top: 28px;
@@ -416,32 +422,32 @@
     <!-- CyberForge horizontal logo (white version) -->
     <svg class="logo-svg" viewBox="0 0 1132.86 198.82" xmlns="http://www.w3.org/2000/svg" aria-label="CyberForge Media">
       <g fill="#F9F9F9">
-        <path d="M311.61,56.6c-24.13,0-39.99,18.62-39.99,41.37s15.34,41.37,40.16,41.37c14.31,0,24.13-5.34,34.48-16.38l15,13.1c-11.03,14.48-28.62,23.96-49.47,23.96-37.23,0-63.44-26.2-63.44-62.06s26.72-62.06,63.09-62.06c19.31,0,35.34,8.79,46.37,20.69l-14.14,14.14c-8.45-8.1-18.44-14.14-32.06-14.14Z"></path>
-        <path d="M393.15,150.72l-38.27-76.02h23.96l25.86,52.06,23.62-52.06h23.1l-56.71,122.39h-23.1l21.55-46.37Z"></path>
-        <path d="M483.48,80.56c7.07-5,15-7.58,23.96-7.58,22.58,0,40.68,17.93,40.68,43.44s-18.27,43.61-41.03,43.61c-10.52,0-18.96-3.62-25.34-8.96v7.24h-20.69V35.92h22.41v44.65ZM504,93.32c-8.1,0-14.82,3.28-20.51,9.83v26.72c4.83,6.03,11.72,9.83,20.17,9.83,12.07,0,22.06-9.48,22.06-23.27s-9.83-23.1-21.72-23.1Z"></path>
-        <path d="M600.88,160.03c-24.65,0-43.09-17.24-43.09-43.44,0-23.27,15.17-43.61,40.68-43.61,24.13,0,39.47,19.48,39.47,42.75,0,2.41-.17,4.48-.52,6.38h-58.09c1.38,11.72,10.69,18.96,22.75,18.96,9.65,0,17.07-5,21.38-9.14l12.41,13.1c-8.45,9.65-21.38,15-34.99,15ZM598.46,91.42c-10.34,0-17.24,7.07-18.44,15.17h35.51c-.69-8.1-6.9-15.17-17.07-15.17Z"></path>
-        <path d="M697.93,93.84c-8.27,0-17.07,3.62-22.41,11.89v52.58h-22.41v-83.61h21.55v8.45c5-6.21,13.96-9.65,24.31-9.65,2.24,0,4.48.17,6.72.69v20.17c-2.24-.52-4.48-.52-7.76-.52Z"></path>
-        <path d="M742.41,83.32h38.79v20.69h-38.79v54.3h-23.27V37.64h72.4v20.69h-49.13v25Z"></path>
-        <path d="M835.32,72.98c25.17,0,43.96,19.48,43.96,43.61s-18.79,43.44-43.96,43.44-43.96-19.31-43.96-43.44,18.79-43.61,43.96-43.61ZM835.32,139.69c13.1,0,21.55-10.52,21.55-23.1s-8.45-23.27-21.55-23.27-21.55,10.86-21.55,23.27,8.45,23.1,21.55,23.1Z"></path>
-        <path d="M939.27,93.84c-8.27,0-17.07,3.62-22.41,11.89v52.58h-22.41v-83.61h21.55v8.45c5-6.21,13.96-9.65,24.31-9.65,2.24,0,4.48.17,6.72.69v20.17c-2.24-.52-4.48-.52-7.76-.52Z"></path>
-        <path d="M1038.4,151.07c0,15.17-2.59,23.96-7.58,31.03-7.58,10.52-21.03,16.72-37.06,16.72s-31.72-7.41-40.16-17.24l13.45-13.79c4.48,3.96,12.93,11.2,26.72,11.2,7.41,0,13.1-2.07,17.07-6.72,3.45-3.96,5.17-8.79,5.17-19.82-6.03,4.65-13.96,7.58-23.62,7.58-22.75,0-41.03-18.1-41.03-43.61s18.1-43.44,40.68-43.44c9.83,0,18.27,2.93,25.68,8.96v-7.24h20.69v76.37ZM995.82,139.69c8.45,0,15.34-3.79,20.17-9.83v-26.72c-5.69-6.55-12.41-9.83-20.51-9.83-11.89,0-21.72,9.83-21.72,23.1s10,23.27,22.06,23.27Z"></path>
-        <path d="M1095.8,160.03c-24.65,0-43.1-17.24-43.1-43.44,0-23.27,15.17-43.61,40.68-43.61,24.13,0,39.47,19.48,39.47,42.75,0,2.41-.17,4.48-.52,6.38h-58.09c1.38,11.72,10.69,18.96,22.75,18.96,9.65,0,17.07-5,21.38-9.14l12.41,13.1c-8.45,9.65-21.38,15-34.99,15ZM1093.39,91.42c-10.34,0-17.24,7.07-18.44,15.17h35.51c-.69-8.1-6.9-15.17-17.07-15.17Z"></path>
+        <path d="M311.61,56.6c-24.13,0-39.99,18.62-39.99,41.37s15.34,41.37,40.16,41.37c14.31,0,24.13-5.34,34.48-16.38l15,13.1c-11.03,14.48-28.62,23.96-49.47,23.96-37.23,0-63.44-26.2-63.44-62.06s26.72-62.06,63.09-62.06c19.31,0,35.34,8.79,46.37,20.69l-14.14,14.14c-8.45-8.1-18.44-14.14-32.06-14.14Z"/>
+        <path d="M393.15,150.72l-38.27-76.02h23.96l25.86,52.06,23.62-52.06h23.1l-56.71,122.39h-23.1l21.55-46.37Z"/>
+        <path d="M483.48,80.56c7.07-5,15-7.58,23.96-7.58,22.58,0,40.68,17.93,40.68,43.44s-18.27,43.61-41.03,43.61c-10.52,0-18.96-3.62-25.34-8.96v7.24h-20.69V35.92h22.41v44.65ZM504,93.32c-8.1,0-14.82,3.28-20.51,9.83v26.72c4.83,6.03,11.72,9.83,20.17,9.83,12.07,0,22.06-9.48,22.06-23.27s-9.83-23.1-21.72-23.1Z"/>
+        <path d="M600.88,160.03c-24.65,0-43.09-17.24-43.09-43.44,0-23.27,15.17-43.61,40.68-43.61,24.13,0,39.47,19.48,39.47,42.75,0,2.41-.17,4.48-.52,6.38h-58.09c1.38,11.72,10.69,18.96,22.75,18.96,9.65,0,17.07-5,21.38-9.14l12.41,13.1c-8.45,9.65-21.38,15-34.99,15ZM598.46,91.42c-10.34,0-17.24,7.07-18.44,15.17h35.51c-.69-8.1-6.9-15.17-17.07-15.17Z"/>
+        <path d="M697.93,93.84c-8.27,0-17.07,3.62-22.41,11.89v52.58h-22.41v-83.61h21.55v8.45c5-6.21,13.96-9.65,24.31-9.65,2.24,0,4.48.17,6.72.69v20.17c-2.24-.52-4.48-.52-7.76-.52Z"/>
+        <path d="M742.41,83.32h38.79v20.69h-38.79v54.3h-23.27V37.64h72.4v20.69h-49.13v25Z"/>
+        <path d="M835.32,72.98c25.17,0,43.96,19.48,43.96,43.61s-18.79,43.44-43.96,43.44-43.96-19.31-43.96-43.44,18.79-43.61,43.96-43.61ZM835.32,139.69c13.1,0,21.55-10.52,21.55-23.1s-8.45-23.27-21.55-23.27-21.55,10.86-21.55,23.27,8.45,23.1,21.55,23.1Z"/>
+        <path d="M939.27,93.84c-8.27,0-17.07,3.62-22.41,11.89v52.58h-22.41v-83.61h21.55v8.45c5-6.21,13.96-9.65,24.31-9.65,2.24,0,4.48.17,6.72.69v20.17c-2.24-.52-4.48-.52-7.76-.52Z"/>
+        <path d="M1038.4,151.07c0,15.17-2.59,23.96-7.58,31.03-7.58,10.52-21.03,16.72-37.06,16.72s-31.72-7.41-40.16-17.24l13.45-13.79c4.48,3.96,12.93,11.2,26.72,11.2,7.41,0,13.1-2.07,17.07-6.72,3.45-3.96,5.17-8.79,5.17-19.82-6.03,4.65-13.96,7.58-23.62,7.58-22.75,0-41.03-18.1-41.03-43.61s18.1-43.44,40.68-43.44c9.83,0,18.27,2.93,25.68,8.96v-7.24h20.69v76.37ZM995.82,139.69c8.45,0,15.34-3.79,20.17-9.83v-26.72c-5.69-6.55-12.41-9.83-20.51-9.83-11.89,0-21.72,9.83-21.72,23.1s10,23.27,22.06,23.27Z"/>
+        <path d="M1095.8,160.03c-24.65,0-43.1-17.24-43.1-43.44,0-23.27,15.17-43.61,40.68-43.61,24.13,0,39.47,19.48,39.47,42.75,0,2.41-.17,4.48-.52,6.38h-58.09c1.38,11.72,10.69,18.96,22.75,18.96,9.65,0,17.07-5,21.38-9.14l12.41,13.1c-8.45,9.65-21.38,15-34.99,15ZM1093.39,91.42c-10.34,0-17.24,7.07-18.44,15.17h35.51c-.69-8.1-6.9-15.17-17.07-15.17Z"/>
       </g>
       <g fill="#00FFFF">
-        <path d="M182.85,47.44c9.89-18.96-.13-31.14,7.2-47.44-15.98.4-36.32,7.93-47.91,17.86,19.71,3.04,36.73,15.16,40.71,29.57Z"></path>
-        <path d="M197.03,89.57c1.81-1.16,4.17-3.7,4.74-6.19-12.78-.55-16.58-7.68-20.97-22.14-7.98-26.26-26.15-33.1-44.36-36.45-16.85-3.1-33.41-3.62-43.75-19.26-1.23,4.39-.59,10.34,1.88,14.77-2.52-1.28-4.76-2.93-6.88-4.91-.07,5.17,2.35,12.08,9.56,15.34-6.64.4-10.2-1.29-13.7-4.54-5.22,1.4-10.52,3.27-15.86,5.71-16.26-11.33-40.37-10.87-60.35-15.57,14.09,22.45,6.84,46.06,18.77,59.46,7.7-9.81,4.07-33.05-.37-40.81,9.56.76,17.86,5.79,21.25,12.22-8.23,6.56-11.28,15.45-13.5,35.75-1.97,18.05-19.29,30.04-33.49,32.77,7.74,10.45,17.31,16.09,28.92,20.62-4.66,1.56-11.81,1.38-17.88.33,18.07,35.8,65.08,54.35,104.73,51.94,48.82-2.97,93.12-41.46,99.77-97.96-6.49,1-13.91.44-18.5-1.08ZM172.18,82.43c-1.14,14.41-8.88,21.7-18.84,19.73,1.22-1.86,1.91-4.2,1.81-6.73-.2-5.76-4.38-10.28-9.31-10.11-1.19.05-2.31.35-3.34.9-.18-12.44,7.46-25.47,17.83-25.05,9.79.4,12.61,11.61,11.84,21.25ZM167.73,56.32c-10.83-6.57-24.46-2.94-28.57,9.7-3.04-21.11,25.78-25.59,28.57-9.7ZM88.11,94.89c-4.16.16-7.53,3.61-8.35,8.16-3.04-4.1-4.5-9.51-4.48-15.36.02-5.63,4.03-12.71,11.74-14.07,14.38-2.54,26.34,9.88,26.83,22.85.29,7.89-5.63,13.79-16.37,14.18-.43.01-.86.02-1.26.02.82-1.65,1.28-3.61,1.2-5.67-.22-5.77-4.39-10.28-9.32-10.11ZM110.63,72.51c-13.02-12.08-35.45-15.58-47.29-.32,2.39-22.61,39.41-25.04,47.29.32ZM192.19,109.28c-1.9,15.39-9.91,33.27-33.73,43.91-15.49,6.92-19.77,22.41-42.14,23.77-19.1,1.16-23.25-13.38-39.93-16.05-22.76-3.64-34.94-13.67-33.05-28.94,2.05-16.56,25.94-28.23,65.19-10.94,11.42-12.86,39.86-27.12,53.99-6.4,5.24-10.96,14.39-21.19,21.2-21.6,6.14-.36,9.91,4.54,8.46,16.24Z"></path>
-        <path d="M135.36,132.92c-22.44,17.79-27.48-6.58-47.53-5.36-4.65.28-8.7,2.05-10.68,5.4,11.87.42,19.64,35.65,40.76,34.86,7.68-.29,13.28-5.13,16.41-12.51,3.73-8.78,17.93-9.53,18.78-19.67-5.35,2.43-14.79,1.5-17.74-2.72ZM103.33,148.07c9.81-1.88,19.95,2.85,20.27,11.29-7.41,6.75-19.71.53-20.27-11.29Z"></path>
-        <path d="M138.71,110.54c-6.39.39-12.95,3.35-12.99,8.72,9.34-.57,8.74,8.02,16.78,7.53,5.71-.35,9.75-5.17,9.44-10.18-.23-3.77-5.07-6.57-13.23-6.07Z"></path>
+        <path d="M182.85,47.44c9.89-18.96-.13-31.14,7.2-47.44-15.98.4-36.32,7.93-47.91,17.86,19.71,3.04,36.73,15.16,40.71,29.57Z"/>
+        <path d="M197.03,89.57c1.81-1.16,4.17-3.7,4.74-6.19-12.78-.55-16.58-7.68-20.97-22.14-7.98-26.26-26.15-33.1-44.36-36.45-16.85-3.1-33.41-3.62-43.75-19.26-1.23,4.39-.59,10.34,1.88,14.77-2.52-1.28-4.76-2.93-6.88-4.91-.07,5.17,2.35,12.08,9.56,15.34-6.64.4-10.2-1.29-13.7-4.54-5.22,1.4-10.52,3.27-15.86,5.71-16.26-11.33-40.37-10.87-60.35-15.57,14.09,22.45,6.84,46.06,18.77,59.46,7.7-9.81,4.07-33.05-.37-40.81,9.56.76,17.86,5.79,21.25,12.22-8.23,6.56-11.28,15.45-13.5,35.75-1.97,18.05-19.29,30.04-33.49,32.77,7.74,10.45,17.31,16.09,28.92,20.62-4.66,1.56-11.81,1.38-17.88.33,18.07,35.8,65.08,54.35,104.73,51.94,48.82-2.97,93.12-41.46,99.77-97.96-6.49,1-13.91.44-18.5-1.08ZM172.18,82.43c-1.14,14.41-8.88,21.7-18.84,19.73,1.22-1.86,1.91-4.2,1.81-6.73-.2-5.76-4.38-10.28-9.31-10.11-1.19.05-2.31.35-3.34.9-.18-12.44,7.46-25.47,17.83-25.05,9.79.4,12.61,11.61,11.84,21.25ZM167.73,56.32c-10.83-6.57-24.46-2.94-28.57,9.7-3.04-21.11,25.78-25.59,28.57-9.7ZM88.11,94.89c-4.16.16-7.53,3.61-8.35,8.16-3.04-4.1-4.5-9.51-4.48-15.36.02-5.63,4.03-12.71,11.74-14.07,14.38-2.54,26.34,9.88,26.83,22.85.29,7.89-5.63,13.79-16.37,14.18-.43.01-.86.02-1.26.02.82-1.65,1.28-3.61,1.2-5.67-.22-5.77-4.39-10.28-9.32-10.11ZM110.63,72.51c-13.02-12.08-35.45-15.58-47.29-.32,2.39-22.61,39.41-25.04,47.29.32ZM192.19,109.28c-1.9,15.39-9.91,33.27-33.73,43.91-15.49,6.92-19.77,22.41-42.14,23.77-19.1,1.16-23.25-13.38-39.93-16.05-22.76-3.64-34.94-13.67-33.05-28.94,2.05-16.56,25.94-28.23,65.19-10.94,11.42-12.86,39.86-27.12,53.99-6.4,5.24-10.96,14.39-21.19,21.2-21.6,6.14-.36,9.91,4.54,8.46,16.24Z"/>
+        <path d="M135.36,132.92c-22.44,17.79-27.48-6.58-47.53-5.36-4.65.28-8.7,2.05-10.68,5.4,11.87.42,19.64,35.65,40.76,34.86,7.68-.29,13.28-5.13,16.41-12.51,3.73-8.78,17.93-9.53,18.78-19.67-5.35,2.43-14.79,1.5-17.74-2.72ZM103.33,148.07c9.81-1.88,19.95,2.85,20.27,11.29-7.41,6.75-19.71.53-20.27-11.29Z"/>
+        <path d="M138.71,110.54c-6.39.39-12.95,3.35-12.99,8.72,9.34-.57,8.74,8.02,16.78,7.53,5.71-.35,9.75-5.17,9.44-10.18-.23-3.77-5.07-6.57-13.23-6.07Z"/>
       </g>
     </svg>
     <nav>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#context">Context</a>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#findings">Findings</a>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#competitive">Competitive</a>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#strategies">Strategies</a>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#services">Services</a>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#pricing">Pricing</a>
-      <a href="file:///Users/taylormcarthur/Downloads/pitch-deck_2.html#roi">ROI</a>
+      <a href="#context">Context</a>
+      <a href="#findings">Findings</a>
+      <a href="#competitive">Competitive</a>
+      <a href="#strategies">Strategies</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#roi">ROI</a>
     </nav>
     <span class="prep-badge">Prepared for {{PROSPECT_NAME}}</span>
   </div>
@@ -453,9 +459,9 @@
 ══════════════════════════════════════════════ -->
 <section class="hero">
   <!-- Watermark mascot -->
-  <svg class="hero-mascot" viewBox="0 0 425 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#00FFFF"></path>
-    <path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"></path>
+  <svg class="hero-mascot" style="filter: brightness(0.4) saturate(0.3) hue-rotate(160deg);" viewBox="0 0 425 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#00FFFF"/>
+    <path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"/>
   </svg>
 
   <div class="container">
@@ -502,7 +508,7 @@
   <div class="container">
     <span class="label">Audit findings</span>
     <h2>Areas requiring <span class="accent-cyan">immediate attention</span></h2>
-    <p style="max-width:580px;margin-bottom:0;">Our audit identified the following gaps between where {{PROSPECT_NAME}} operates today and where your top competitors are.</p>
+    <p style="max-width:100%;margin-bottom:0;">Our audit identified the following gaps between where {{PROSPECT_NAME}} operates today and where your top competitors are.</p>
 
     <div class="findings-grid">
       <div class="finding-card">
@@ -553,7 +559,7 @@
   <div class="container">
     <span class="label">Competitive landscape</span>
     <h2>How <span class="accent-cyan">{{PROSPECT_NAME}}</span> stacks up</h2>
-    <p style="max-width:620px;margin-bottom:0;">A side-by-side view of digital marketing activity across your competitive set — and where the whitespace lies.</p>
+    <p style="max-width:100%;margin-bottom:0;">A side-by-side view of digital marketing activity across your competitive set — and where the whitespace lies.</p>
 
     <div class="table-wrap">
       <table>
@@ -643,7 +649,7 @@
   <div class="container">
     <span class="label">Recommended strategies</span>
     <h2>Closing the gap, <span class="accent-cyan">channel by channel</span></h2>
-    <p style="max-width:580px;margin-bottom:0;">The highest-leverage moves {{PROSPECT_NAME}} can make in the next 90 days to start compounding growth.</p>
+    <p style="max-width:100%;margin-bottom:0;">The highest-leverage moves {{PROSPECT_NAME}} can make in the next 90 days to start compounding growth.</p>
 
     <div class="strategies-list">
       <div class="strategy-row">
@@ -678,7 +684,7 @@
   <div class="container">
     <span class="label">Scope of work</span>
     <h2>What's <span class="accent-cyan">included</span></h2>
-    <p style="max-width:580px;margin-bottom:0;">Every engagement is built around measurable outcomes. Here's exactly what we deliver.</p>
+    <p style="max-width:100%;margin-bottom:0;">Every engagement is built around measurable outcomes. Here's exactly what we deliver.</p>
 
     <div class="services-grid">
       <div class="service-card">
@@ -733,7 +739,7 @@
   <div class="container">
     <span class="label">Engagement pricing</span>
     <h2>Investment <span class="accent-cyan">tiers</span></h2>
-    <p style="max-width:540px;margin-bottom:0;">All tiers include onboarding, monthly reporting, and a dedicated strategist.</p>
+    <p style="max-width:100%;margin-bottom:0;">All tiers include onboarding, monthly reporting, and a dedicated strategist.</p>
 
     <div class="pricing-grid">
       <div class="price-card">
@@ -779,7 +785,7 @@
     <div style="margin-top:60px;">
       <span class="label">Optional add-ons</span>
       <h2>Extend your <span class="accent-cyan">engagement</span></h2>
-      <p style="max-width:500px;margin-bottom:0;">Bolt these onto any tier. Removable at any time.</p>
+      <p style="max-width:100%;margin-bottom:0;">Bolt these onto any tier. Removable at any time.</p>
       <div class="addons-grid">
         <div class="addon-card"><div class="addon-price">{{ADDON_1_PRICE}}</div><h3>{{ADDON_1_NAME}}</h3><p>{{ADDON_1_DESC}}</p></div>
         <div class="addon-card"><div class="addon-price">{{ADDON_2_PRICE}}</div><h3>{{ADDON_2_NAME}}</h3><p>{{ADDON_2_DESC}}</p></div>
@@ -798,7 +804,7 @@
   <div class="container">
     <span class="label">Return on investment</span>
     <h2>What it takes to <span class="accent-cyan">break even</span></h2>
-    <p style="max-width:620px;margin-bottom:0;">Here's how the numbers work at the recommended tier — and what a full year of compounding growth looks like.</p>
+    <p style="max-width:100%;margin-bottom:0;">Here's how the numbers work at the recommended tier — and what a full year of compounding growth looks like.</p>
 
     <div class="roi-grid">
       <div class="roi-card">
@@ -836,19 +842,52 @@
 ══════════════════════════════════════════════ -->
 <section class="footer-section">
   <!-- Mascot watermark bottom-right -->
-  <svg class="footer-mascot" viewBox="0 0 425 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#00FFFF"></path>
-    <path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"></path>
+  <svg class="footer-mascot" style="filter: brightness(0.4) saturate(0.3) hue-rotate(160deg);" viewBox="0 0 425 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#00FFFF"/>
+    <path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"/>
   </svg>
 
   <div class="container">
     <span class="label">Next steps</span>
     <h2>Let's build something <span class="accent-cyan">worth talking about.</span></h2>
     <p>{{CLOSING_PARAGRAPH}}</p>
-    <div class="btn-row">
-      <a href="mailto:{{CFM_EMAIL}}" class="btn-primary">Schedule a call →</a>
-      <a href="file:///Users/taylormcarthur/Downloads/%7B%7BCFM_WEBSITE%7D%7D" class="btn-secondary" target="_blank">cyberforgemedia.com</a>
+    <div class="contract-form">
+      <h3 style="color:#F9F9F9;margin-bottom:8px;font-size:1.1rem;">Ready to move forward?</h3>
+      <p style="font-size:0.9rem;margin-bottom:24px;color:rgba(249,249,249,0.55);">Fill out your details and we'll send the contract directly to your inbox.</p>
+      <div class="form-row">
+        <input type="text" placeholder="Your name" class="form-input" id="cf-name">
+        <input type="email" placeholder="Your email" class="form-input" id="cf-email">
+      </div>
+      <div class="form-row">
+        <select class="form-input" id="cf-tier">
+          <option value="" disabled selected>Select your tier</option>
+          <option value="tier1">{{TIER_1_NAME}} — {{TIER_1_PRICE}}/mo</option>
+          <option value="tier2">{{TIER_2_NAME}} — {{TIER_2_PRICE}}/mo (Recommended)</option>
+          <option value="tier3">{{TIER_3_NAME}} — {{TIER_3_PRICE}}/mo</option>
+        </select>
+        <input type="text" placeholder="Any questions or notes (optional)" class="form-input" id="cf-notes">
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px;font-size:15px;padding:16px;" onclick="submitContract()">
+        Send the Contract →
+      </button>
+      <p id="cf-confirm" style="display:none;margin-top:16px;color:#00FFFF;font-size:0.9rem;font-weight:600;">✓ Sent! Taylor and Peter will be in touch within 24 hours.</p>
     </div>
+    <div class="btn-row" style="margin-top:40px;">
+      <a href="{{CFM_WEBSITE}}" class="btn-secondary" target="_blank">cyberforgemedia.com ↗</a>
+    </div>
+    <script>
+    function submitContract() {
+      const name = document.getElementById('cf-name').value;
+      const email = document.getElementById('cf-email').value;
+      const tier = document.getElementById('cf-tier').value;
+      const notes = document.getElementById('cf-notes').value;
+      if (!name || !email || !tier) { alert('Please fill in your name, email, and selected tier.'); return; }
+      const subject = encodeURIComponent('Contract Request — ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nTier: ' + tier + '\nNotes: ' + (notes || 'None'));
+      window.location.href = 'mailto:taylor@cyberforgemedia.com,peter@cyberforgemedia.com?subject=' + subject + '&body=' + body;
+      document.getElementById('cf-confirm').style.display = 'block';
+    }
+    </script>
     <div class="footer-meta">
       <span>© {{PROPOSAL_YEAR}} CyberForge Media. Confidential — prepared exclusively for {{PROSPECT_NAME}}.</span>
       <span>Questions? <a href="mailto:{{CFM_EMAIL}}">{{CFM_EMAIL}}</a></span>
@@ -856,6 +895,5 @@
   </div>
 </section>
 
-
-
-</body></html>
+</body>
+</html>
