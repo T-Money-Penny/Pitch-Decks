@@ -57,18 +57,18 @@
   .prep-badge { font-size: 11px; font-weight: 700; background: rgba(0,0,255,0.12); color: var(--cyan); border: 1px solid rgba(0,255,255,0.25); border-radius: 20px; padding: 4px 13px; white-space: nowrap; }
   .hero { padding: 96px 0 80px; position: relative; overflow: hidden; }
   .hero::before { content: ''; position: absolute; top: -120px; right: -80px; width: 480px; height: 480px; background: radial-gradient(circle, rgba(0,0,255,0.12) 0%, transparent 70%); pointer-events: none; }
-  .hero-mascot { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 300px; opacity: 0.18; pointer-events: none; }
+  .hero-mascot { display: none; }
   .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: var(--carbon3); border: 1px solid rgba(0,255,255,0.2); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; color: var(--cyan); margin-bottom: 28px; }
   .hero-eyebrow::before { content: '●'; font-size: 7px; color: var(--cyan); }
   .hero h1 { max-width: 680px; margin-bottom: 22px; }
   .hero-sub { font-size: 1.05rem; color: var(--muted); max-width: 560px; margin-bottom: 52px; line-height: 1.8; }
-  .snapshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; margin-top: 52px; padding-top: 44px; border-top: 1px solid var(--border); }
+  .snapshot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 52px; padding-top: 44px; border-top: 1px solid var(--border); }
   .snap-card { background: #2a2a2e; border: 1px solid rgba(0,255,255,0.2); border-radius: var(--radius); padding: 20px 24px; transition: border-color .2s, transform .2s; }
   .snap-card:hover { border-color: rgba(0,255,255,0.5); transform: translateY(-2px); }
   .snap-card .val { font-size: 1.4rem; font-weight: 700; color: #00FFFF; margin-bottom: 6px; }
   .snap-card .key { font-size: 10px; font-weight: 700; color: rgba(249,249,249,0.45); text-transform: uppercase; letter-spacing: 0.12em; }
   .context-body { display: grid; gap: 22px; max-width: 100%; }
-  .findings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; margin-top: 42px; }
+  .findings-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 42px; }
   .finding-card { background: #232327; border: 1px solid rgba(0,255,255,0.15); border-radius: var(--radius-lg); padding: 28px; position: relative; overflow: hidden; transition: border-color .2s, transform .2s; box-shadow: 0 2px 16px rgba(0,0,0,0.25); }
   .finding-card:hover { transform: translateY(-2px); border-color: rgba(0,255,255,0.18); }
   .finding-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--blue), var(--cyan)); }
@@ -123,7 +123,7 @@
   .service-card ul { list-style: none; display: grid; gap: 7px; }
   .service-card ul li { font-size: 0.86rem; color: var(--muted); padding-left: 14px; position: relative; line-height: 1.5; }
   .service-card ul li::before { content: '·'; position: absolute; left: 0; color: var(--cyan); font-size: 1.4rem; line-height: 1.2; }
-  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 40px; }
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
   .price-card { background: #232327; border: 1px solid rgba(0,255,255,0.15); border-radius: var(--radius-lg); padding: 28px; text-align: center; position: relative; transition: border-color .2s, transform .2s; box-shadow: 0 2px 16px rgba(0,0,0,0.25); }
   .price-card.featured { border-color: var(--blue); background: linear-gradient(160deg, rgba(0,0,255,0.12), var(--carbon2)); }
   .featured-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--blue); color: var(--white); font-size: 10px; font-weight: 700; padding: 3px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
@@ -134,7 +134,7 @@
   .price-card ul { list-style: none; text-align: left; display: grid; gap: 8px; }
   .price-card ul li { font-size: 0.84rem; color: var(--muted); display: flex; gap: 8px; align-items: flex-start; }
   .price-card ul li::before { content: '✓'; color: #00ff9d; flex-shrink: 0; font-weight: 700; }
-  .addons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 30px; }
+  .addons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 30px; }
   .addon-card { background: #232327; border: 1px solid rgba(0,255,255,0.15); border-radius: var(--radius); padding: 20px; transition: border-color .2s; box-shadow: 0 2px 12px rgba(0,0,0,0.2); }
   .addon-card:hover { border-color: rgba(0,255,255,0.18); }
   .addon-price { font-size: 1rem; font-weight: 700; color: var(--cyan); margin-bottom: 4px; }
@@ -154,7 +154,7 @@
   .breakeven-note { font-size: 0.86rem; color: var(--muted); margin-top: 16px; line-height: 1.7; padding: 14px; background: var(--carbon3); border-radius: var(--radius); }
   .footer-section { text-align: center; padding: 100px 0 84px; position: relative; overflow: hidden; border-top: 1px solid var(--border) !important; }
   .footer-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% -10%, rgba(0,0,255,0.14) 0%, transparent 70%); pointer-events: none; }
-  .footer-mascot { position: absolute; bottom: -10px; right: 60px; width: 200px; opacity: 0.18; pointer-events: none; }
+  .footer-mascot { display: none; }
   .footer-section h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 16px; }
   .footer-section > .container > p { max-width: 520px; margin: 0 auto 36px; font-size: 1rem; }
   .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 56px; }
@@ -195,9 +195,72 @@
   .footer-meta { font-size: 0.8rem; color: var(--muted2); border-top: 1px solid var(--border); padding-top: 28px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
   .footer-meta a { color: var(--muted); }
   @media (max-width: 480px) { .snapshot-grid { grid-template-columns: 1fr 1fr; } nav { display: none; } .hero-mascot { display: none; } }
+
+  /* ── MOBILE RESPONSIVE ───────────────────────────── */
+  @media (max-width: 768px) {
+    header { padding: 0 20px; }
+    .header-inner { height: 56px; }
+    nav { display: none; }
+    .prep-badge { font-size: 10px; padding: 3px 10px; }
+
+    .container { padding: 0 20px; }
+    section { padding: 56px 0; }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.4rem; }
+
+    .hero { padding: 72px 0 52px; }
+    .hero-sub { font-size: 0.95rem; }
+
+    .snapshot-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px; }
+    .findings-grid { grid-template-columns: 1fr !important; }
+    .services-grid { grid-template-columns: 1fr !important; }
+    .pricing-grid { grid-template-columns: 1fr !important; }
+    .addons-grid { grid-template-columns: 1fr !important; }
+    .strategies-list .strategy-row { grid-template-columns: 44px 1fr; gap: 14px; padding: 18px; }
+    .roi-grid { grid-template-columns: 1fr !important; }
+    .roi-card.highlight { grid-column: auto !important; }
+
+    .table-wrap { border-radius: 10px; }
+    table { font-size: 0.78rem; }
+    thead th { padding: 10px 12px; font-size: 10px; }
+    td { padding: 10px 12px; }
+
+    .contract-form { padding: 24px 20px; }
+    .form-row { grid-template-columns: 1fr !important; }
+
+    .btn-row { flex-direction: column; align-items: center; }
+    .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+
+    .footer-section { padding: 64px 0 52px; }
+    .footer-meta { flex-direction: column; gap: 6px; text-align: center; }
+
+    /* Hide fixed mascot on mobile - too distracting on small screens */
+    body > div[style*="position:fixed"] { display: none; }
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 1.7rem; }
+    .snap-card .val { font-size: 1.1rem; }
+    .finding-num { font-size: 2rem; }
+    .price-card .amount { font-size: 1.8rem; }
+  }
+
 </style>
 </head>
 <body>
+
+<!-- Fixed background mascot -->
+<div style="position:fixed;right:-60px;top:50%;transform:translateY(-50%);width:380px;opacity:0.07;pointer-events:none;z-index:0;">
+  <svg viewBox="0 0 425 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#FF00FF"/>
+    <path d="M347.818 114.149C365.009 81.1923 347.592 60.0208 360.334 31.6877C332.557 32.383 297.201 45.4718 277.055 62.7324C311.316 68.0166 340.9 89.0839 347.818 114.132V114.149Z" fill="#00FFFF"/>
+    <path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"/>
+    <path d="M265.27 262.75C226.265 293.673 217.504 251.312 182.653 253.433C174.57 253.919 167.53 256.996 164.088 262.819C184.721 263.549 198.227 324.787 234.938 323.414C248.288 322.91 258.022 314.496 263.462 301.668C269.946 286.407 294.629 285.103 296.106 267.478C286.807 271.701 270.398 270.085 265.27 262.75ZM209.595 289.084C226.647 285.816 244.273 294.038 244.829 308.708C231.949 320.441 210.568 309.629 209.595 289.084Z" fill="#00FFFF"/>
+    <path d="M271.093 223.831C259.986 224.509 248.583 229.654 248.514 238.988C264.749 237.998 263.706 252.929 277.681 252.077C287.606 251.469 294.629 243.091 294.09 234.382C293.69 227.829 285.277 222.962 271.093 223.831Z" fill="#00FFFF"/>
+  </svg>
+</div>
+
 
 <header>
   <div class="header-inner">
@@ -220,7 +283,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <svg class="hero-mascot" style="filter: brightness(0.7) saturate(1.2) hue-rotate(160deg);" viewBox="0 0 425 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#00FFFF"/><path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"/></svg>
+
   <div class="container">
     <div class="hero-eyebrow">Confidential Growth Proposal · June 2026</div>
     <h1>
@@ -568,7 +631,7 @@
 
 <!-- FOOTER -->
 <section class="footer-section">
-  <svg class="footer-mascot" style="filter: brightness(0.7) saturate(1.2) hue-rotate(160deg);" viewBox="0 0 425 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M424.578 168.608C424.578 291.743 335.946 376.099 232.261 378.95C100.017 382.583 34.3473 315.8 0 220.963C30.8535 217.747 57.344 208.9 68.9553 182.392C26.8034 138.345 62.0893 106.188 12.6195 39.2317C59.6211 47.8011 114.41 47.6795 149.07 67.6343C154.337 65.531 159.708 63.6537 165.114 62.0198C163.063 47.1928 163.08 28.2114 165.514 18.8945C168.955 23.4486 173.388 27.0989 176.447 29.1152C178.168 20.4589 181.575 8.08274 184.599 0C198.018 37.1284 224.509 53.3808 258.074 55.6058C294.611 22.9272 340.24 10.6553 387.519 13.6451C379.28 24.6828 370.242 42.291 372.971 67.5473C376.603 101.304 363.462 122.388 359.621 129.15C363.845 159.36 377.907 162.211 402.312 160.16C402.312 163.775 400.765 169.146 399.513 172.414C407.283 171.875 419.538 169.79 424.578 168.625V168.608Z" fill="#00FFFF"/><path d="M372.466 187.381C375.613 185.364 379.715 180.949 380.706 176.621C358.491 175.665 351.886 163.271 344.255 138.137C330.384 92.491 298.801 80.6015 267.147 74.7785C237.858 69.39 209.073 68.4861 191.1 41.3003C188.962 48.9311 190.075 59.2735 194.368 66.9738C189.988 64.7489 186.094 61.8809 182.409 58.4392C182.287 67.4258 186.494 79.4369 199.027 85.1035C187.485 85.7988 181.297 82.8612 175.213 77.212C166.139 79.6455 156.927 82.896 147.645 87.1372C119.381 67.4432 77.4726 68.2427 42.7429 60.0731C67.2345 99.0962 54.6324 140.136 75.3694 163.428C88.7537 146.376 82.4439 105.98 74.7262 92.491C91.3437 93.812 105.771 102.555 111.663 113.732C97.3579 125.135 92.0563 140.588 88.1975 175.874C84.7732 207.248 54.6671 228.09 29.9843 232.835C43.4382 251 60.073 260.803 80.2538 268.677C72.1537 271.389 59.7254 271.076 49.1743 269.251C80.584 331.479 162.298 363.723 231.218 359.534C316.078 354.372 393.082 287.467 404.641 189.258C393.36 190.996 380.462 190.023 372.484 187.381H372.466Z" fill="#F9F9F9"/></svg>
+
   <div class="container">
     <span class="label">Next steps</span>
     <h2>Let's build something <span class="accent-cyan">worth talking about.</span></h2>
